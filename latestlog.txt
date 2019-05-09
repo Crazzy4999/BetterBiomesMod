@@ -1,0 +1,116 @@
+[09máj.2019 19:39:45.005] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.forgeVersion, 25.0.70, --fml.mcpVersion, 20190213.203750, --fml.mcpMappings, snapshot_20180921-1.13, --fml.mcVersion, 1.13.2, --fml.forgeGroup, net.minecraftforge, --accessToken, ????????, --version, FMLDev, --assetIndex, 1.13.1, --assetsDir, C:\Users\Menyét\.gradle\caches\forge_gradle\assets, --userProperties, {}]
+[09máj.2019 19:39:45.011] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher starting: java version 1.8.0_202
+[09máj.2019 19:39:45.704] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[09máj.2019 19:39:46.247] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--gameDir, ., --launchTarget, fmluserdevclient, --fml.forgeVersion, 25.0.70, --fml.mcpVersion, 20190213.203750, --fml.mcpMappings, snapshot_20180921-1.13, --fml.mcVersion, 1.13.2, --fml.forgeGroup, net.minecraftforge, --accessToken, ????????, --version, FMLDev, --assetIndex, 1.13.1, --assetsDir, C:\Users\Menyét\.gradle\caches\forge_gradle\assets, --userProperties, {}]
+[09máj.2019 19:39:49.838] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Player741
+[09máj.2019 19:40:01.062] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:block' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:potion' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:biome' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:block_entity_type' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:enchantment' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:entity_type' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:item' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:mob_effect' was empty after loading
+[09máj.2019 19:40:01.082] [Client thread/ERROR] [net.minecraft.util.registry.IRegistry/]: Registry 'minecraft:sound_event' was empty after loading
+[09máj.2019 19:40:01.373] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[09máj.2019 19:40:01.411] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.1.6 build 14
+[09máj.2019 19:40:02.647] [Client thread/INFO] [net.minecraftforge.fml.ModLoader/CORE]: Loading Network data for FML net version: FML2
+[09máj.2019 19:40:02.729] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 25.0.70, for MC 1.13.2 with MCP 20190213.203750
+[09máj.2019 19:40:02.729] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v25.0.70 Initialized
+[09máj.2019 19:40:03.289] [Client thread/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/]: Exception caught during firing event: Can't use a null-name for the registry, object Block{null}.
+	Index: 1
+	Listeners:
+		0: NORMAL
+		1: ASM: class almos.betterbiomesmod.BetterBiomesMod$RegsitryEvents registerBlocks(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+		2: ASM: class almos.betterbiomesmod.BetterBiomesMod$RegsitryEvents registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+java.lang.NullPointerException: Can't use a null-name for the registry, object Block{null}.
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:864)
+	at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:299)
+	at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:293)
+	at net.minecraftforge.registries.ForgeRegistry.register(ForgeRegistry.java:125)
+	at net.minecraftforge.registries.ForgeRegistry.registerAll(ForgeRegistry.java:172)
+	at almos.betterbiomesmod.BetterBiomesMod$RegsitryEvents.registerBlocks(BetterBiomesMod.java:126)
+	at net.minecraftforge.eventbus.ASMEventHandler_0_RegsitryEvents_registerBlocks_Register.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:257)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:105)
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source)
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source)
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:100)
+	at net.minecraftforge.fml.ModList.lambda$dispatchSynchronousEvent$4(ModList.java:111)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at net.minecraftforge.fml.ModList.dispatchSynchronousEvent(ModList.java:111)
+	at net.minecraftforge.fml.ModList.lambda$static$0(ModList.java:82)
+	at net.minecraftforge.fml.LifecycleEventProvider.dispatch(LifecycleEventProvider.java:70)
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:147)
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:814)
+	at net.minecraftforge.fml.ModLoader.loadMods(ModLoader.java:135)
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:52)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:411)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:344)
+	at net.minecraft.client.main.Main.main(SourceFile:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:19)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:32)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:50)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:56)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:42)
+	at net.minecraftforge.userdev.UserdevLauncher.main(UserdevLauncher.java:81)
+
+[09máj.2019 19:40:03.295] [Client thread/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Caught exception during event RegistryEvent.Register<minecraft:blocks> dispatch for modid betterbiomesmodbycrazzy
+java.lang.NullPointerException: Can't use a null-name for the registry, object Block{null}.
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:864) ~[guava-21.0.jar:?]
+	at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:299) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:293) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.registries.ForgeRegistry.register(ForgeRegistry.java:125) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.registries.ForgeRegistry.registerAll(ForgeRegistry.java:172) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at almos.betterbiomesmod.BetterBiomesMod$RegsitryEvents.registerBlocks(BetterBiomesMod.java:126) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler_0_RegsitryEvents_registerBlocks_Register.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-0.8.0-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:257) ~[eventbus-0.8.0-service.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:105) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:25.0]
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source) ~[?:1.8.0_202]
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source) ~[?:1.8.0_202]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:100) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.ModList.lambda$dispatchSynchronousEvent$4(ModList.java:111) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at java.util.ArrayList.forEach(Unknown Source) ~[?:1.8.0_202]
+	at net.minecraftforge.fml.ModList.dispatchSynchronousEvent(ModList.java:111) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.ModList.lambda$static$0(ModList.java:82) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.LifecycleEventProvider.dispatch(LifecycleEventProvider.java:70) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:147) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:814) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.ModLoader.loadMods(ModLoader.java:135) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:52) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:411) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:344) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(SourceFile:144) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:19) [modlauncher-0.12.0.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:32) [modlauncher-0.12.0.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:50) [modlauncher-0.12.0.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:56) [modlauncher-0.12.0.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:42) [modlauncher-0.12.0.jar:?]
+	at net.minecraftforge.userdev.UserdevLauncher.main(UserdevLauncher.java:81) [forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13-recomp.jar:?]
+[09máj.2019 19:40:03.322] [Client thread/FATAL] [net.minecraftforge.fml.ModLoader/]: Failed to complete lifecycle event LOAD_REGISTRIES, 1 errors found
+[09máj.2019 19:40:03.378] [Client thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: forge-1.13.2-25.0.70_mapped_snapshot_20180921-1.13.jar, main, Default
+[09máj.2019 19:40:05.230] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager/]: Starting up SoundSystem version 201809301515...
+[09máj.2019 19:40:05.504] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager/]: Initializing No Sound
+[09máj.2019 19:40:05.505] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager/]: (Silent Mode)
+[09máj.2019 19:40:05.695] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager/]: OpenAL initialized.
+[09máj.2019 19:40:05.835] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager/SOUNDS]: Preloading sound minecraft:sounds/ambient/underwater/underwater_ambience.ogg
+[09máj.2019 19:40:05.840] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager/SOUNDS]: Sound engine started
+[09máj.2019 19:40:11.901] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap/]: Max texture size: 8192
+[09máj.2019 19:40:13.914] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap/]: Created: 512x512 textures-atlas
+[09máj.2019 19:40:18.136] [Client thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[09máj.2019 19:40:18.137] [Client thread/FATAL] [net.minecraftforge.fml.ModLoader/]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[09máj.2019 19:40:18.137] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[09máj.2019 19:40:18.214] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[09máj.2019 19:40:19.500] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
