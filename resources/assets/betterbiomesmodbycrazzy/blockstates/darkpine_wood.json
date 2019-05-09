@@ -1,0 +1,8 @@
+{
+    "variants":
+	{
+        "axis=y": { "model": "betterbiomesmodbycrazzy:block/darkpine_wood" },
+        "axis=z": { "model": "betterbiomesmodbycrazzy:block/darkpine_wood", "x": 90 },
+        "axis=x": { "model": "betterbiomesmodbycrazzy:block/darkpine_wood", "x": 90, "y": 90 }
+    }
+}

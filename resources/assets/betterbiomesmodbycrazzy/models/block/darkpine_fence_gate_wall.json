@@ -1,0 +1,6 @@
+{
+    "parent": "block/template_fence_gate_wall",
+    "textures": {
+        "texture": "betterbiomesmodbycrazzy:block/darkpine_planks"
+    }
+}

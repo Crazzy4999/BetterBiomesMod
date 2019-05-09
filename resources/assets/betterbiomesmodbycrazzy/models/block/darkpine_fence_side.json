@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_side",
+    "textures": {
+        "texture": "betterbiomesmodbycrazzy:block/darkpine_planks"
+    }
+}

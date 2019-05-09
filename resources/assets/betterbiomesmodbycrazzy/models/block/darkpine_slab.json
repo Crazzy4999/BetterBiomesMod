@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "betterbiomesmodbycrazzy:block/darkpine_planks",
+        "top": "betterbiomesmodbycrazzy:block/darkpine_planks",
+        "side": "betterbiomesmodbycrazzy:block/darkpine_planks"
+    }
+}
