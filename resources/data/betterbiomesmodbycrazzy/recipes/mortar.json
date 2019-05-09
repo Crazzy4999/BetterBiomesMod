@@ -1,0 +1,18 @@
+{
+	"type":"minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"S S",
+		"S S",
+		"SSS"
+	],
+	
+	"key":
+	{
+		"S": { "item": "minecraft:stone" }
+	},
+	
+	"result": { "item": "betterbiomesmodbycrazzy:mortar" },
+	"count": 1
+}
