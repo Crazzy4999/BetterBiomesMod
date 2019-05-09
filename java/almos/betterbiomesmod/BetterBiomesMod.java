@@ -12,6 +12,7 @@ import almos.betterbiomesmod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockFenceGate;
+import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.BlockRotatedPillar;
@@ -111,7 +112,8 @@ public class BetterBiomesMod
 				ItemList.jade_pickaxe = new ItemCustomPickaxe(ToolMaterialList.jade, -6, -2.4f, new Item.Properties().group(bbmt)).setRegistryName(location("jade_pickaxe")),
 				ItemList.jade_sword = new ItemSword(ToolMaterialList.jade, 0, -1.5f, new Item.Properties().group(bbmt)).setRegistryName(location("jade_sword")),
 				ItemList.jade_shovel = new ItemSpade(ToolMaterialList.jade, -8.0f, -2.6f, new Item.Properties().group(bbmt)).setRegistryName(location("jade_shovel")),
-				ItemList.jade_hoe = new ItemHoe(ToolMaterialList.jade, -3.0f, new Item.Properties().group(bbmt)).setRegistryName(location("jade_hoe"))
+				ItemList.jade_hoe = new ItemHoe(ToolMaterialList.jade, -3.0f, new Item.Properties().group(bbmt)).setRegistryName(location("jade_hoe")),
+				ItemList.heroin_poppy = new ItemBlock(BlockList.heroin_poppy, new Item.Properties().group(bbmd)).setRegistryName(location("heroin_poppy"))
 				
 			);
 			
@@ -144,7 +146,8 @@ public class BetterBiomesMod
 				BlockList.darkpine_fence = new BlockFence(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_fence")),
 				BlockList.darkpine_fence_gate = new BlockFenceGate(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_fence_gate")),
 				BlockList.darkpine_slab = new BlockSlab(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_slab")),
-				BlockList.jade_ore = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 8.0f).sound(SoundType.STONE)).setRegistryName(location("jade_ore"))
+				BlockList.jade_ore = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 8.0f).sound(SoundType.STONE)).setRegistryName(location("jade_ore")),
+				BlockList.heroin_poppy = new BlockFlower(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0.0f, 0.0f).sound(SoundType.PLANT))
 				
 				);
 			
