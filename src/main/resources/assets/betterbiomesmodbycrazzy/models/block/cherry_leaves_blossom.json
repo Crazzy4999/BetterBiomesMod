@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "betterbiomesmodbycrazzy:block/cherry_leaves_blossom"
+    }
+}

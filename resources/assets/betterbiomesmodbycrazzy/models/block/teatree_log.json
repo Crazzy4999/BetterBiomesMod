@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures":
-	{
-        "end": "betterbiomesmodbycrazzy:block/teatree_log_top",
-        "side": "betterbiomesmodbycrazzy:block/teatree_log"
-    }
-}

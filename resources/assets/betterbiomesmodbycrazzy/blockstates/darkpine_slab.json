@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "betterbiomesmodbycrazzy:block/darkpine_slab" },
-        "type=top": { "model": "betterbiomesmodbycrazzy:block/darkpine_slab_top" },
-        "type=double": { "model": "betterbiomesmodbycrazzy:block/darkpine_planks" }
-    }
-}

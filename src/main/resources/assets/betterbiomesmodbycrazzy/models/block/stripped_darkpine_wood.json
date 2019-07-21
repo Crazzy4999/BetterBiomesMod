@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "betterbiomesmodbycrazzy:block/stripped_darkpine_log"
+    }
+}

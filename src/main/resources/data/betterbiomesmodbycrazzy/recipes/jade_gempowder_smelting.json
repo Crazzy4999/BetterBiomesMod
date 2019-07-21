@@ -1,0 +1,8 @@
+{
+	"type":"minecraft:smelting",
+	"ingredient" :{ "item": "betterbiomesmodbycrazzy:jade_gempowder" },
+	"result": "betterbiomesmodbycrazzy:jade_gem",
+	"count": 1,
+	"experience": 3.0,
+	"cookingtime": 1600
+}
