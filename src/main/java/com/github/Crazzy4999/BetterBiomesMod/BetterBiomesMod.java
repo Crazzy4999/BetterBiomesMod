@@ -3,6 +3,7 @@ package com.github.Crazzy4999.BetterBiomesMod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.github.Crazzy4999.BetterBiomesMod.block.BBMSaplingBlock;
 import com.github.Crazzy4999.BetterBiomesMod.config.ModConfig;
 import com.github.Crazzy4999.BetterBiomesMod.items.CustomAxeItem;
 import com.github.Crazzy4999.BetterBiomesMod.items.CustomPickaxeItem;
@@ -12,7 +13,6 @@ import com.github.Crazzy4999.BetterBiomesMod.lists.BetterBiomeToolMaterials;
 import com.github.Crazzy4999.BetterBiomesMod.lists.trees.DarkPineTree;
 import com.github.Crazzy4999.BetterBiomesMod.world.OreGeneration;
 
-import net.minecraft.block.trees.SpruceTree;
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
@@ -20,7 +20,6 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.LogBlock;
 import net.minecraft.block.RotatedPillarBlock;
-import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -53,10 +52,10 @@ public class BetterBiomesMod
 	public static final String MODID = "betterbiomesmodbycrazzy";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
-	public static final ItemGroup BBM = new BBMItemGroup();
-	public static final ItemGroup BBMD = new BBMItemGroup1();
-	public static final ItemGroup BBMI = new BBMItemGroup2();
-	public static final ItemGroup BBMT = new BBMItemGroup3();
+	public static final ItemGroup BBM = BBMItemGroup.BBMItemGroup;
+	public static final ItemGroup BBMD = BBMItemGroup.BBMItemGroup1;
+	public static final ItemGroup BBMI = BBMItemGroup.BBMItemGroup2;
+	public static final ItemGroup BBMT = BBMItemGroup.BBMItemGroup3;
 	
 	public BetterBiomesMod()
 	{
@@ -168,7 +167,7 @@ public class BetterBiomesMod
 				BetterBiomeBlocks.darkpine_log = new LogBlock(MaterialColor.OBSIDIAN,Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_log")),
 				BetterBiomeBlocks.darkpine_wood = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_wood")),
 				BetterBiomeBlocks.darkpine_leaves = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("darkpine_leaves")),
-				BetterBiomeBlocks.darkpine_sapling = new SaplingBlock(new DarkPineTree(), Block.Properties.create(Material.LEAVES).hardnessAndResistance(0).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("darkpine_sapling")),
+				BetterBiomeBlocks.darkpine_sapling = new BBMSaplingBlock(new DarkPineTree(), Block.Properties.create(Material.LEAVES).hardnessAndResistance(0).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("darkpine_sapling")),
 				BetterBiomeBlocks.darkpine_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f).sound(SoundType.WOOD)).setRegistryName(location("darkpine_planks")),
 				BetterBiomeBlocks.stripped_darkpine_log = new LogBlock(MaterialColor.OBSIDIAN,Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0f).sound(SoundType.WOOD)).setRegistryName(location("stripped_darkpine_log")),
 				BetterBiomeBlocks.stripped_darkpine_wood = new RotatedPillarBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f).sound(SoundType.WOOD)).setRegistryName(location("stripped_darkpine_wood")),
