@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "betterbiomesmodbycrazzy:block/heroin_poppy"
+    }
+}

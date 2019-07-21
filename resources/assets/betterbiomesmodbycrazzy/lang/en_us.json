@@ -1,0 +1,55 @@
+{
+	"item.betterbiomesmodbycrazzy.jade_gem": "Jade Gemstone",
+	"item.betterbiomesmodbycrazzy.jade_gemshards": "Jade Gem Shards",
+	"item.betterbiomesmodbycrazzy.jade_gempowder": "Jade Gem Powder",
+	"item.betterbiomesmodbycrazzy.mortar": "Mortar",
+	"item.betterbiomesmodbycrazzy.pestle": "Pestle",
+	"item.betterbiomesmodbycrazzy.gemstonemortar_andpestle": "Gemstone Mortar & Pestle",
+	"item.betterbiomesmodbycrazzy.copper_ingot": "Copper Ingot",
+	"item.betterbiomesmodbycrazzy.turquoise_gem": "Turquoise Gemstone",
+	
+	"block.betterbiomesmodbycrazzy.jade_block": "Jade Gem Block",
+	"block.betterbiomesmodbycrazzy.jade_ore": "Jade Ore",
+	"block.betterbiomesmodbycrazzy.turquoise_block": "Turquoise Gem Block",
+	
+	"block.betterbiomesmodbycrazzy.cherry_log": "Cherry Log",
+	"block.betterbiomesmodbycrazzy.cherry_wood": "Cherry Wood",
+	"block.betterbiomesmodbycrazzy.cherry_leaves": "Cherry Leaves",
+	"block.betterbiomesmodbycrazzy.cherry_leaves_blossom": "Blossoming Cherry Leaves",
+	
+	"block.betterbiomesmodbycrazzy.teatree_log": "Tea Tree Log",
+	"block.betterbiomesmodbycrazzy.teatree_wood": "Tea Tree Wood",
+	"block.betterbiomesmodbycrazzy.teatree_leaves": "Tea Tree Leaves",
+	
+	"block.betterbiomesmodbycrazzy.darkpine_log": "Dark Pine Log",
+	"block.betterbiomesmodbycrazzy.darkpine_wood": "Dark Pine Wood",
+	"block.betterbiomesmodbycrazzy.darkpine_leaves": "Dark Pine Leaves",
+	"block.betterbiomesmodbycrazzy.darkpine_planks": "Dark Pine Planks",
+	"block.betterbiomesmodbycrazzy.stripped_darkpine_log": "Stripped Dark Pine Log",
+	"block.betterbiomesmodbycrazzy.stripped_darkpine_wood": "Stripped Dark Pine Wood",
+	"block.betterbiomesmodbycrazzy.darkpine_fence": "Dark Pine Fence",
+	"block.betterbiomesmodbycrazzy.darkpine_fence_gate": "Dark Pine Fence Gate",
+	"block.betterbiomesmodbycrazzy.darkpine_stairs": "Dark Pine Stairs",
+	"block.betterbiomesmodbycrazzy.darkpine_slab": "Dark Pine Slab",
+	
+	"block.betterbiomesmodbycrazzy.datepalm_log": "Date Palm Log",
+	"block.betterbiomesmodbycrazzy.datepalm_wood": "Date Palm Wood",
+	"block.betterbiomesmodbycrazzy.datepalm_leaves": "Date Palm Leaves",
+	"block.betterbiomesmodbycrazzy.datepalm_fruit_leaves": "Date Palm Fruit Leaves",
+	
+	"itemGroup.bbm": "BBM Building Blocks",
+	"itemGroup.bbmd": "BBM Decorations",
+	"itemGroup.bbmi": "BBM Miscellaneous",
+	"itemGroup.bbmt": "BBM Tools",
+	
+	"item.betterbiomesmodbycrazzy.jade_axe": "Jade Axe",
+	"item.betterbiomesmodbycrazzy.jade_pickaxe": "Jade Pickaxxe",
+	"item.betterbiomesmodbycrazzy.jade_sword": "Jade Sword",
+	"item.betterbiomesmodbycrazzy.jade_shovel": "Jade Shovel",
+	"item.betterbiomesmodbycrazzy.jade_hoe": "Jade Hoe",
+	"item.betterbiomesmodbycrazzy.poppy_cutter_knife": "Poppy Cutter Knife",
+	
+	"block.betterbiomesmodbycrazzy.heroin_poppy": "Heroin Poppy",
+	"item.betterbiomesmodbycrazzy.bleeding_heroin_poppy": "Bleeding Heroin Poppy"
+	
+}
