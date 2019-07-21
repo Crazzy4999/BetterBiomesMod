@@ -1,0 +1,8 @@
+{
+    "variants":
+	{
+        "axis=y": { "model": "betterbiomesmodbycrazzy:block/cherry_log" },
+        "axis=z": { "model": "betterbiomesmodbycrazzy:block/cherry_log", "x": 90 },
+        "axis=x": { "model": "betterbiomesmodbycrazzy:block/cherry_log", "x": 90, "y": 90 }
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"type":"minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"JJJ",
+		" S ",
+		" S "
+	],
+	
+	"key":
+	{
+		"J": { "item": "betterbiomesmodbycrazzy:jade_gem" },
+		"S": { "item": "minecraft:stick" }
+	},
+	
+	"result": { "item": "betterbiomesmodbycrazzy:jade_pickaxe" },
+	"count": 1
+}

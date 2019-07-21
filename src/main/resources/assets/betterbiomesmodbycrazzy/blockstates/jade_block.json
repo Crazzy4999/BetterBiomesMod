@@ -1,0 +1,6 @@
+{
+    "variants":
+	{
+        "": { "model": "betterbiomesmodbycrazzy:block/jade_block" }
+    }
+}
