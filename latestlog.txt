@@ -1,0 +1,64 @@
+2019-07-30 13:07:17,805 main WARN Disabling terminal, you're running in an unsupported environment.
+[13:07:18.322] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190624.152911, --fml.mcVersion, 1.14.3, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 27.0.51, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\Menyét\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[13:07:18.342] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 3.0.1+56+e6669cf starting: java version 1.8.0_211 by Oracle Corporation
+[13:07:18.535] [main/DEBUG] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Found launch services [minecraft,fmldevdata,fmldevclient,fmldevserver,fmluserdevserver,testharness,fmluserdevdata,fmlclient,fmluserdevclient,fmlserver]
+[13:07:18.628] [main/DEBUG] [cp.mo.mo.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[13:07:18.676] [main/DEBUG] [cp.mo.mo.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [eventbus,object_holder_definalize,runtime_enum_extender,field_redirect_net.minecraft.potion.PotionEffect/Lnet/minecraft/potion/Potion;,accesstransformer,capability_inject_definalize,runtimedistcleaner]
+[13:07:18.699] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[13:07:18.713] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: []
+[13:07:18.781] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [fml]
+[13:07:18.783] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[13:07:18.785] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[13:07:18.790] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/]: Injecting tracing printstreams for STDOUT/STDERR.
+[13:07:18.795] [main/DEBUG] [ne.mi.fm.lo.LauncherVersion/CORE]: Found FMLLauncher version 27.0
+[13:07:18.795] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML 27.0 loading
+[13:07:18.796] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found ModLauncher version : 3.0.1+56+e6669cf
+[13:07:18.799] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Initializing modjar URL handler
+[13:07:18.800] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found AccessTransformer version : 0.16.0+44+853b469
+[13:07:18.802] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found EventBus version : 0.10.3-milestone.0.1+1a5fa31+45+1a5fa31
+[13:07:18.803] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[13:07:18.810] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found CoreMod version : 0.6.3-milestone.0.4+c1d1f08+26+c1d1f08
+[13:07:18.811] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found ForgeSPI package implementation version 0.13.0+25+9048a81
+[13:07:18.811] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found ForgeSPI package specification 2
+[13:07:19.268] [main/INFO] [ne.mi.fm.lo.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[13:07:19.269] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[13:07:19.274] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[13:07:19.293] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[13:07:19.294] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[13:07:19.294] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[13:07:19.296] [main/DEBUG] [ne.mi.fm.lo.FileUtils/CORE]: Found existing GAMEDIR directory : D:\almos\modding\BetterBiomesMod\run
+[13:07:19.297] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path GAMEDIR is D:\almos\modding\BetterBiomesMod\run
+[13:07:19.298] [main/DEBUG] [ne.mi.fm.lo.FileUtils/CORE]: Found existing MODSDIR directory : D:\almos\modding\BetterBiomesMod\run\mods
+[13:07:19.298] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path MODSDIR is D:\almos\modding\BetterBiomesMod\run\mods
+[13:07:19.299] [main/DEBUG] [ne.mi.fm.lo.FileUtils/CORE]: Found existing CONFIGDIR directory : D:\almos\modding\BetterBiomesMod\run\config
+[13:07:19.299] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path CONFIGDIR is D:\almos\modding\BetterBiomesMod\run\config
+[13:07:19.299] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path FMLCONFIG is D:\almos\modding\BetterBiomesMod\run\config\fml.toml
+[13:07:19.300] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Loading configuration
+Exception in thread "main" [13:07:19.361] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: com.electronwill.nightconfig.core.io.ParsingException: Not enough data available
+[13:07:19.361] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.ParsingException.notEnoughData(ParsingException.java:22)
+[13:07:19.362] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.ReaderInput.directReadChar(ReaderInput.java:36)
+[13:07:19.362] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.AbstractInput.readChar(AbstractInput.java:49)
+[13:07:19.362] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.AbstractInput.readCharsUntil(AbstractInput.java:123)
+[13:07:19.363] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.toml.TableParser.parseKey(TableParser.java:166)
+[13:07:19.363] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.toml.TableParser.parseDottedKey(TableParser.java:145)
+[13:07:19.363] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:55)
+[13:07:19.363] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:44)
+[13:07:19.364] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:37)
+[13:07:19.364] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:113)
+[13:07:19.364] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:219)
+[13:07:19.365] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:202)
+[13:07:19.365] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.file.WriteSyncFileConfig.load(WriteSyncFileConfig.java:73)
+[13:07:19.366] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.file.AutoreloadFileConfig.load(AutoreloadFileConfig.java:41)
+[13:07:19.366] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.electronwill.nightconfig.core.file.AutosaveCommentedFileConfig.load(AutosaveCommentedFileConfig.java:85)
+[13:07:19.366] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at net.minecraftforge.fml.loading.FMLConfig.loadFrom(FMLConfig.java:55)
+[13:07:19.367] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at net.minecraftforge.fml.loading.FMLConfig.load(FMLConfig.java:67)
+[13:07:19.367] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at net.minecraftforge.fml.loading.FMLServiceProvider.initialize(FMLServiceProvider.java:71)
+[13:07:19.367] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.TransformationServiceDecorator.onInitialize(TransformationServiceDecorator.java:64)
+[13:07:19.368] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$initialiseTransformationServices$7(TransformationServicesHandler.java:106)
+[13:07:19.368] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at java.util.HashMap$Values.forEach(Unknown Source)
+[13:07:19.369] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.TransformationServicesHandler.initialiseTransformationServices(TransformationServicesHandler.java:106)
+[13:07:19.369] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:59)
+[13:07:19.369] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:75)
+[13:07:19.369] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+[13:07:19.370] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:101)
+Picked up _JAVA_OPTIONS: -Xmx2048m
