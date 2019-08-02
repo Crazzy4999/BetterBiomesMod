@@ -3,15 +3,18 @@ package com.github.Crazzy4999.BetterBiomesMod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.github.Crazzy4999.BetterBiomesMod.block.BBMCropsBlock;
 import com.github.Crazzy4999.BetterBiomesMod.block.BBMSaplingBlock;
 import com.github.Crazzy4999.BetterBiomesMod.config.ModConfig;
-import com.github.Crazzy4999.BetterBiomesMod.items.CustomAxeItem;
-import com.github.Crazzy4999.BetterBiomesMod.items.CustomPickaxeItem;
+import com.github.Crazzy4999.BetterBiomesMod.item.BBMFoods;
+import com.github.Crazzy4999.BetterBiomesMod.item.CustomAxeItem;
+import com.github.Crazzy4999.BetterBiomesMod.item.CustomPickaxeItem;
 import com.github.Crazzy4999.BetterBiomesMod.lists.BetterBiomeBlocks;
 import com.github.Crazzy4999.BetterBiomesMod.lists.BetterBiomeItems;
 import com.github.Crazzy4999.BetterBiomesMod.lists.BetterBiomeToolMaterials;
 import com.github.Crazzy4999.BetterBiomesMod.lists.trees.DarkPineTree;
 import com.github.Crazzy4999.BetterBiomesMod.world.OreGeneration;
+import com.github.Crazzy4999.BetterBiomesMod.world.BBMbiome.BBMBiomes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
@@ -25,6 +28,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -33,6 +37,7 @@ import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -71,10 +76,10 @@ public class BetterBiomesMod
 		ModConfig.loadConfig(ModConfig.CLIENT, FMLPaths.CONFIGDIR.get().resolve("betterbiomesmodbycrazzy-client.toml").toString());
 		
 		MinecraftForge.EVENT_BUS.register(this);
+		
 	}
-	
 	private void setup(final FMLCommonSetupEvent event)
-	{
+	{		
 		OreGeneration.setupOreGeneration();
 		LOGGER.info("Setup method registered.");
 	}
@@ -84,10 +89,15 @@ public class BetterBiomesMod
 		LOGGER.info("clientRegistries method registered.");
 	}
 	
+	
 	@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegsitryEvents
 	{
-		
+		@SubscribeEvent
+		public static void registerBiomesInit(final RegistryEvent.Register<Biome> event)
+		{
+			BBMBiomes.init();
+		}
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
@@ -140,7 +150,13 @@ public class BetterBiomesMod
 				BetterBiomeItems.poppy_cutter_knife = new SwordItem(BetterBiomeToolMaterials.copper, 0, -1.5f, new Item.Properties().group(BBMT)).setRegistryName(location("poppy_cutter_knife")),
 				
 				BetterBiomeItems.heroin_poppy = new BlockItem(BetterBiomeBlocks.heroin_poppy, new Item.Properties().group(BBMD)).setRegistryName(location("heroin_poppy")),
-				BetterBiomeItems.bleeding_heroin_poppy = new Item(new Item.Properties().group(BBMI)).setRegistryName(location("bleeding_heroin_poppy"))
+				BetterBiomeItems.bleeding_heroin_poppy = new Item(new Item.Properties().group(BBMI)).setRegistryName(location("bleeding_heroin_poppy")),
+				
+				BetterBiomeItems.orange_habanero_seeds = new BlockNamedItem(BetterBiomeBlocks.orange_habanero, new Item.Properties().group(BBMI)).setRegistryName(location("orange_habanero_seeds")),
+				BetterBiomeItems.orange_habanero_chili = new Item(new Item.Properties().food(BBMFoods.ORANGE_HABANERO).group(BBMI)).setRegistryName(location("orange_habanero_chili")),
+				BetterBiomeItems.red_habanero_seeds = new BlockNamedItem(BetterBiomeBlocks.red_habanero, new Item.Properties().group(BBMI)).setRegistryName(location("red_habanero_seeds")),
+				BetterBiomeItems.red_habanero_chili = new Item(new Item.Properties().food(BBMFoods.RED_HABANERO).group(BBMI)).setRegistryName(location("red_habanero_chili"))
+
 
 			);
 			
@@ -179,6 +195,15 @@ public class BetterBiomesMod
 				BetterBiomeBlocks.datepalm_wood = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("datepalm_wood")),
 				BetterBiomeBlocks.datepalm_leaves = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("datepalm_leaves")),
 				BetterBiomeBlocks.datepalm_fruit_leaves = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("datepalm_fruit_leaves")),
+				
+				/*BetterBiomeBlocks.banana_stem = new BBMBananaBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.SAND).doesNotBlockMovement().sound(SoundType.WOOD).variableOpacity()).setRegistryName(location("banana_stem")),
+				BetterBiomeBlocks.banana_leaves_end = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD).variableOpacity()).setRegistryName(location("banana_leaves_end")),
+								BetterBiomeBlocks.banana_leaves_end = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD).variableOpacity()).setRegistryName(location("banana_leaves_conjuctive")),
+				BetterBiomeBlocks.banana_leaves_base = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f).tickRandomly().sound(SoundType.PLANT).variableOpacity()).setRegistryName(location("banana_leaves_base")),
+*/
+				
+				BetterBiomeBlocks.red_habanero = new BBMCropsBlock(Block.Properties.create(Material.PLANTS, MaterialColor.RED).tickRandomly().doesNotBlockMovement().hardnessAndResistance(0.0f, 0.0f).sound(SoundType.CROP)).setRegistryName(location("red_habanero")),
+				BetterBiomeBlocks.orange_habanero = new BBMCropsBlock(Block.Properties.create(Material.PLANTS, MaterialColor.ORANGE_TERRACOTTA).tickRandomly().doesNotBlockMovement().hardnessAndResistance(0.0f, 0.0f).sound(SoundType.CROP)).setRegistryName(location("orange_habanero")),
 						
 				BetterBiomeBlocks.jade_ore = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 8.0f).sound(SoundType.STONE)).setRegistryName(location("jade_ore")),
 				
@@ -204,43 +229,44 @@ public class BetterBiomesMod
 			return new ResourceLocation(MODID, name);
 		}
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
