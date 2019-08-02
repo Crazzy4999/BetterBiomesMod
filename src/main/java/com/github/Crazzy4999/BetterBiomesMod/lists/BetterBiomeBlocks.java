@@ -17,6 +17,11 @@ public class BetterBiomeBlocks
 	public static Block teatree_wood;
 	public static Block teatree_leaves;
 	
+	public static Block banana_stem;
+	public static Block banana_leaves_base;
+	public static Block banana_leaves_conjuctive;
+	public static Block banana_leaves_end;
+	
 	public static Block darkpine_log;
 	public static Block darkpine_wood;
 	public static Block darkpine_leaves;
@@ -35,5 +40,9 @@ public class BetterBiomeBlocks
 	
 	public static Block heroin_poppy;
 	
+	public static Block orange_habanero;
+	public static Block red_habanero;
 	
+	public static Block tall_jungle_grass;
+	public static Block jungle_grass;
 }

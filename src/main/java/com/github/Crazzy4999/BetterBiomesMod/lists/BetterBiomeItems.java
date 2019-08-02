@@ -51,4 +51,9 @@ public class BetterBiomeItems
 		
 		public static Item heroin_poppy;
 		public static Item bleeding_heroin_poppy;
+		
+		public static Item orange_habanero_chili;
+		public static Item orange_habanero_seeds;
+		public static Item red_habanero_chili;
+		public static Item red_habanero_seeds;
 	}
